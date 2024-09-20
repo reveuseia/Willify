@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: 'Josefin Sans', 'sans-serif';
+}
+
+body{
+    /* background: linear-gradient(to left, #47146E, #8A27D4); */
+    /* background: linear-gradient(to left, #b67fffce, #795495, #47146E); */
+    background: linear-gradient(to left, #b67fffce, #795495, #270044);
+
+    padding: 16px;
+}
+
+.topContainer{
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    height: 60px;
+    width: 120px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.navBtn{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D8B2FF;
+}
+
+.aboutUsLogo{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+
+}
+
+.content{
+    /* border: solid 1px black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+    height: 250px;
+    background-color: #D5C3EB;
+    border-radius: 15px;
+
+}
+
+.about-content{
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    color: #47146E;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    margin-top: 15px;
+    font-weight:400;
+    color: #D5C3EB;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        height: 50px;
+        width: 100px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .navBtn {
+        height: 25px;
+        width: 25px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .aboutUsLogo {
+        width: 35px;
+        height: 35px;
+        right: 20px;
+        top: 20px;
+    }
+
+    .content {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-content {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+

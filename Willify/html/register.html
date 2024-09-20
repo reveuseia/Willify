@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIllify - Register</title>
+    <link rel="stylesheet" href="css/register_style.css">
+</head>
+<body>
+    <!-- <div class="logo">
+        <img src="./assets/Willify Logo.png" alt="Willify Logo">
+    </div>
+        <div class="container">
+           
+            <div class="loginBtn">
+                <button type="button">
+                    Login
+                </button>
+            </div>
+
+           <div class="WelcomeTitle"> 
+            Welcome To Willify
+        </div>
+
+        <div class="RegistForm">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" required>
+
+                <label for="gender">Gender</label>
+                <div class="gender">
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        </div> -->
+        
+        <div class="logo">
+            <img src="./assets/Willify Logo.png" alt="">
+        </div>
+
+        <a href="login.html">
+            <div id="loginBtn">
+                <button type="button">Login</button>
+            </div>
+        </a>
+       
+
+        <div class="WelcomeTitle">
+            <p>Welcome To Willify</p>
+
+            <form id="RegistForm">
+               <div class="form-box">
+
+                <div class="input">
+                    <div class="label">
+                        <label for="name">Name</label>
+                    </div>
+                    <input type="text" id="name" placeholder="Input Your Name" >
+                    <span id="nameError" class="errorMsg"></span>
+                </div>
+
+                <div class="input">
+                    <div class="label">
+                        <label for="email">Email</label>
+                    </div>
+                    <input type="text" id="email" placeholder="Input Your Email" >
+                    <span id="emailError" class="errorMsg"></span>
+                </div>
+
+                <div class="input">
+                    <div class="label">
+                        <label for="password">Password</label>
+                    </div>
+                    <input type="password" id="password" placeholder="Create Your Password" >
+                    <span id="passwordError" class="errorMsg"></span>
+                </div>
+
+                <div class="input">
+                    <div class="label">
+                        <label for="age">Age</label>
+                    </div>
+                    <input type="number" id="age" >
+                    <span id="ageError" class="errorMsg"></span>
+                </div>
+
+                <div class="input">
+                    <div class="label">
+                        <label for="gender">Gender</label>
+                    </div>
+
+                    <div class="rbFemale">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    </div>
+                    
+                    <div class="rbMale">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    </div>
+                    
+                </div>
+
+                <div id="RegistBtn">
+                    <button type="submit">
+                        Register
+                    </button>
+                </div>
+
+            </div>
+                
+        </form>
+    </div>
+
+</body>
+<script src="./js/register.js"></script>
+</html>

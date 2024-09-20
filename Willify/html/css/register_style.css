@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+*{
+    font-family: 'Josefin Sans', 'sans-serif';
+}
+body{
+    background: #47146E;
+    /* background: linear-gradient(to right, #D5C3EB, #B77FFF, #795495, #47146E); */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* min-height: 100vh; */
+
+}
+
+.logo{
+    display: flex;
+    height: 60px;
+    width: 120px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#loginBtn{
+    position: absolute;
+    padding: 10px;
+    top: 20px;
+    right: 20px;
+    
+}
+
+button{
+   background-color: #795495;
+    width: 90px;
+    height: 35px;
+    border-radius: 8px;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.WelcomeTitle{
+    font-size: 24px;
+    color: #D8B2FF;
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.form-box{
+    background-color: #D5C3EB;
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+
+}
+
+#RegistForm{
+margin-top: 65px;
+}
+
+
+.input{
+margin-bottom: 5px;
+}
+
+.label{
+    text-align:left;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #795495;
+}
+
+input[type= "text"],
+input[type= "text"],
+input[type= "password"],
+input[type= "number"]{
+    align-items: center;
+    width: 300px;
+    height: 20px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #795495;
+    border-radius: 10px;
+}
+
+.rbFemale{
+    margin-right: 240px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #795495;
+}
+
+.rbMale{
+    margin-right: 255px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #795495;
+}
+
+#RegistBtn{
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+/* .RegistBtn:hover{
+    letter-spacing: 4px;
+    background: linear-gradient(to right, #47146E, #795495, #D5C3EB);
+    color: #ffff;
+    box-shadow: white;
+}
+
+.RegistBtn:active{
+    background: linear-gradient(to right, #47146E, #795495, #D5C3EB);
+    color: #ffff;
+    transform: scale(80%);
+    transition: 100ms;
+} */
+
+button[type= "submit"]{
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.errorMsg{
+    display: flex;
+    /* align-items: center; */
+    font-size: 12px;
+    color: #47146E;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    #loginBtn {
+        position: static;
+        margin: 10px 0;
+        align-self: flex-end;
+    }
+
+    .WelcomeTitle {
+        font-size: 20px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .form-box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    #RegistForm {
+        margin-top: 40px;
+    }
+
+    .label {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .rbFemale,
+    .rbMale {
+        margin-right: 0;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        height: 40px;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+    }
+
+    #RegistBtn {
+        margin-top: 20px;
+    }
+
+    .errorMsg {
+        font-size: 14px;
+    }
+}

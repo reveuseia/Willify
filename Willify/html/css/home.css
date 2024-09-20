@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap */
+
+*{
+    font-family: 'Josefin Sans', 'sans-serif';
+}
+
+body{
+    background: linear-gradient(to left, #b67fffce, #795495, #270044);
+    /* background: linear-gradient(to left, #b67fffce, #795495, #47146E); */
+    /* background: linear-gradient(to left, #47146E, #8A27D4, #d49efd); */
+    padding: 16px;
+}
+
+.logo{
+    display: flex;
+    height: 60px;
+    width: 120px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    gap: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', 'sans-serif';
+    color: white;
+    padding: 12px;
+}
+
+.Container{
+    
+display: flex;
+gap: 20px;
+margin-left: 10rem;
+
+}
+
+.label{
+   text-align: justify;
+   margin-top: 40px;
+   padding-left: 10rem;
+   font-size: 24px;
+   font-weight: 700;
+   color: rgba(255, 255, 255, 0.65);
+
+
+}
+
+.card{
+    /* display: flex; */
+    flex-direction: column;
+    background-color: #D5C3EB;
+    width: 240px;
+    height: 240px;
+    border-radius: 15px;
+    align-items: center; 
+    text-align: left;
+    /* margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 15px; */
+}
+
+.card:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to top, #d6b0f4, #cd9dfd, #6718b6, #3a0174);
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.songTitle{
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #47146E;
+}
+
+.artist{
+margin-left: 20px;
+font-size: 16px;
+font-weight: 400;
+color: #47146e85;
+margin-top: -15px;
+/* padding-bottom: 10px; */
+}
+
+.aboutUs{
+    /* position: fixed; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 15px;
+    margin-left: 30px;
+    /* width: 20px;
+    height: 20px; */
+}
+
+#aboutUsLogo{
+    width: 40px;
+    height: 40px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    margin-top: 15px;
+    font-weight:400;
+    color: #D5C3EB;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        position: static;
+        align-items: center;
+        margin-top: 10px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .Container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .label {
+        padding-left: 1rem;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+    }
+
+    .songTitle {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .artist {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .aboutUs {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
